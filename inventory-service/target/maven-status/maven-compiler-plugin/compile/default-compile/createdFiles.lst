@@ -1,0 +1,5 @@
+com\programming4fun\inventoryservice\controller\InventoryController.class
+com\programming4fun\inventoryservice\model\Inventory.class
+com\programming4fun\inventoryservice\InventoryServiceApplication.class
+com\programming4fun\inventoryservice\repository\InventoryRepository.class
+com\programming4fun\inventoryservice\service\InventoryService.class
