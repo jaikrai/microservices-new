@@ -20,7 +20,7 @@ import java.util.UUID;
 @Transactional
 public class OrderService {
 
-    private final WebClient webClient;
+    private final WebClient.Builder webClientBuilder;
     private final OrderRepository orderRepository;
 
     public void placeOrder(OrderRequest orderRequest){
@@ -39,13 +39,13 @@ public class OrderService {
             // call Inventory service and place order if the product is in
             // stock
             // http://localhost:8082/api/inventory?skuCode=iPhone-13&skuCodde=iPhone-13-red
-            InventoryResponse[] inventoryResponseArray = webClient.get()
-                    .uri("http://localhost:8082/api/inventory",
+            InventoryResponse[] inventoryResponseArray = webClientBuilder.build().get()
+                    .uri("http://inventory-service/api/inventory",
                             uriBuilder -> uriBuilder.queryParam("skuCode",skuCodes).build())
                     .retrieve()
                     .bodyToMono(InventoryResponse[].class)
                     .block(); // block will change Asyhc call into syhnc call since (bodyToMono is ashync call
-        Boolean allProductsInStocks =  Arrays.stream(inventoryResponseArray).allMatch(InventoryResponse ::isInStock);
+        Boolean allProductsInStocks =  Arrays.stream(inventoryResponseArray).allMatch(InventoryResponse::isInStock);
             if(allProductsInStocks){
                 orderRepository.save(order);
             } else {
