@@ -1,8 +1,7 @@
-package com.programming4fun.inventoryservice.service;
+package com.programming4fun.notificationservice.inventoryservice.service;
 
-import com.programming4fun.inventoryservice.dto.InventoryResponse;
-import com.programming4fun.inventoryservice.model.Inventory;
-import com.programming4fun.inventoryservice.repository.InventoryRepository;
+import com.programming4fun.notificationservice.inventoryservice.dto.InventoryResponse;
+import com.programming4fun.notificationservice.inventoryservice.repository.InventoryRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;

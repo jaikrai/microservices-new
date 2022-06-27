@@ -1,4 +1,4 @@
-package com.programming4fun.discoveryserver;
+package com.programming4fun.notificationservice.discoveryserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

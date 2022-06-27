@@ -1,4 +1,4 @@
-package com.programming4fun.inventoryservice.dto;
+package com.programming4fun.notificationservice.inventoryservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

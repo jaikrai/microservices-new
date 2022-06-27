@@ -1,10 +1,9 @@
-package com.programming4fun.inventoryservice.repository;
+package com.programming4fun.notificationservice.inventoryservice.repository;
 
-import com.programming4fun.inventoryservice.model.Inventory;
+import com.programming4fun.notificationservice.inventoryservice.model.Inventory;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 
 public interface InventoryRepository extends JpaRepository<Inventory, Long> {

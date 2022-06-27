@@ -1,4 +1,4 @@
-package com.programming4fun.inventoryservice;
+package com.programming4fun.notificationservice.inventoryservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

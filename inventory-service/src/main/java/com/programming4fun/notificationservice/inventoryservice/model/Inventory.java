@@ -1,4 +1,4 @@
-package com.programming4fun.inventoryservice.model;
+package com.programming4fun.notificationservice.inventoryservice.model;
 
 
 import lombok.AllArgsConstructor;

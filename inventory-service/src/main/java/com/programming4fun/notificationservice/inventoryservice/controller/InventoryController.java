@@ -1,7 +1,7 @@
-package com.programming4fun.inventoryservice.controller;
+package com.programming4fun.notificationservice.inventoryservice.controller;
 
-import com.programming4fun.inventoryservice.dto.InventoryResponse;
-import com.programming4fun.inventoryservice.service.InventoryService;
+import com.programming4fun.notificationservice.inventoryservice.dto.InventoryResponse;
+import com.programming4fun.notificationservice.inventoryservice.service.InventoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

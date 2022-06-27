@@ -1,4 +1,4 @@
-package com.programming4fun.discoveryserver.config;
+package com.programming4fun.notificationservice.discoveryserver.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
